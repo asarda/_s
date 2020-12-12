@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer container">
-		<div class="site-info">
+		<div class="site-info is-size-7">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -22,7 +22,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://automattic.com/">Automattic</a>' );
+				printf( esc_html__( 'Theme: %1$s based on _s from %2$s by  %3$s', '_s' ), '<a href="https://github.com/asarda/wpkickoff-bulma"><em>Kickoff Buma</em></a>', '<a href="https://automattic.com/">Automattic</a>', 'that includes <a href="https://bulma.io/">Bulma framework</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

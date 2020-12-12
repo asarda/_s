@@ -22,12 +22,17 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
-
+<div id="page" class="site mt-3">
 	<header id="masthead" class="site-header container">
 		<div class="site-branding">
+		<!-- remove this icon, it's just for fun! -->
+		<div class="mb-5 is-flex is-justify-content-center">
+		<div class="has-text-centered tag is-black "><i class="fas fa-football-ball"></i>&nbsp;Let's kicking off this theme!</div>
+		</div>
+		
+		<!-- -->
 			<?php
+			
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -41,13 +46,13 @@
 			$_s_description = get_bloginfo( 'description', 'display' );
 			if ( $_s_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $_s_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<p class="site-descriptionis-family-secondary is-size-6"><?php echo $_s_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav class="navbar container" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="primary-menu">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>

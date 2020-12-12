@@ -4,25 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 //Set Bulma Variables
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
 $family-sans-serif: 'Roboto', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: true;
-$fullhd-enabled: false;
-
-$body-background-color: white;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
 $navbar-background-color: transparent;
+$link: #FD8F3B;
+$link-hover:  lighten(#FD8F3B, 10%) ;
+
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
