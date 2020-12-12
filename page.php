@@ -17,6 +17,8 @@ get_header();
 <div class="container">
 	<div class="columns">
 		<div class="column is-three-quarters">
+		<span class="mi mdi-access-point-check"></span>
+
 			<main id="primary" class="site-main content">
 				<?php
 				while ( have_posts() ) :
