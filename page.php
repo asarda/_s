@@ -33,9 +33,11 @@ get_header();
 				?>
 			</main><!-- #main -->
 		</div>
+
 		<div class="column">
 			<?php get_sidebar(); ?>
 		</div>	
+		
 	</div>
 </div>
 <?php get_footer(); ?>

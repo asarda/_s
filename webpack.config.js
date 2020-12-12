@@ -54,7 +54,6 @@ module.exports = {
             //proxy: '<your local wp url>'
         //})
     ],
-    //https://github.com/webpack-contrib/terser-webpack-plugin
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()],
