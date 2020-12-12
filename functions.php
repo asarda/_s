@@ -189,3 +189,20 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Load custom WordPress Bulma nav walker.
  */
 require get_template_directory() . '/inc/bulma-wp-navwalker.php';
+
+
+function kickoff_bulma_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+	<p class="control has-icons-left">
+	<input class="input is-hovered"  name="s" id="s" type="text" placeholder="' . __( 'Search for:' ) . '" value="' . get_search_query() . '">
+	<span class="icon is-left">
+		<i class="fas fa-search" aria-hidden="true"></i>
+	</span>
+	</p>
+	</form>';
+
+    return $form;
+}
+
+
+add_filter( 'get_search_form', 'kickoff_bulma_search_form', 100 );
