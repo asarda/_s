@@ -184,3 +184,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Load custom WordPress Bulma nav walker.
+ */
+require get_template_directory() . '/inc/bulma-wp-navwalker.php';
