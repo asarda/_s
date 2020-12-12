@@ -13,7 +13,7 @@ get_header();
 	<div class="columns">
 		<div class="column is-three-quarters">
 	
-			<main id="primary" class="site-main">
+			<main id="primary" class="site-main content">
 
 				<?php if ( have_posts() ) : ?>
 

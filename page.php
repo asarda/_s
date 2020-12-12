@@ -17,7 +17,7 @@ get_header();
 <div class="container">
 	<div class="columns">
 		<div class="column is-three-quarters">
-			<main id="primary" class="site-main">
+			<main id="primary" class="site-main content">
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -37,7 +37,7 @@ get_header();
 		<div class="column">
 			<?php get_sidebar(); ?>
 		</div>	
-		
+
 	</div>
 </div>
 <?php get_footer(); ?>
