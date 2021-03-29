@@ -27,7 +27,7 @@
 		<div class="site-branding">
 		<!-- remove this icon, it's just for fun! -->
 		<div class="mb-5 is-flex is-justify-content-center">
-		<div class="has-text-centered tag is-black "><i class="fas fa-football-ball"></i>&nbsp;Let's kicking off this theme!</div>
+			<div class="has-text-centered tag is-black "><i class="fas fa-football-ball"></i>&nbsp;Let's kicking off this theme!</div>
 		</div>
 		
 		<!-- -->

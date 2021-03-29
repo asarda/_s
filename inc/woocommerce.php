@@ -20,13 +20,13 @@ function _s_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 150,
+			'thumbnail_image_width' => 300,
 			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 3,
 				'min_rows'        => 1,
 				'default_columns' => 4,
-				'min_columns'     => 1,
+				'min_columns'     => 4,
 				'max_columns'     => 6,
 			),
 		)
@@ -118,7 +118,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_before' ) ) {
 	 */
 	function _s_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main content">
+			<main id="primary" class="site-main content container">
 		<?php
 	}
 }
@@ -224,4 +224,10 @@ if ( ! function_exists( '_s_woocommerce_header_cart' ) ) {
 		</ul>
 		<?php
 	}
+}
+
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+add_action( 'woocommerce_sidebar', 'action_function_name_3942' );
+function action_function_name_3942(){
+	echo "hola";
 }
